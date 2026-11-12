@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rank Risk: Guess the Order | Press Kit</title>
+<meta name="description" content="Press kit for Rank Risk: Guess the Order, a trivia ranking puzzle game about knowledge, deduction and risk. Out December 1, 2026 on Steam for Windows and macOS.">
+<meta property="og:title" content="Rank Risk: Guess the Order | Press Kit">
+<meta property="og:description" content="Rank six cards in the right order, bet your points, read the feedback. Out December 1, 2026 on Steam.">
+<meta property="og:image" content="assets/thumbs/capsule.jpg">
+<link rel="icon" href="assets/logos/rankrisk_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070b24;
+    --panel: #0e1538;
+    --panel-2: #131c48;
+    --line: #26326e;
+    --text: #e8ecff;
+    --muted: #9aa6d6;
+    --cyan: #3ee8ff;
+    --pink: #ff5ad9;
+    --gold: #ffd23e;
+    --green: #5dff9a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg) radial-gradient(1200px 600px at 50% -200px, #1b2a7a 0%, transparent 70%) no-repeat;
+    color: var(--text);
+    font: 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+  }
+  a { color: var(--cyan); }
+  a:hover { color: var(--pink); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  h1, h2, h3 { font-family: "Press Start 2P", monospace; line-height: 1.4; font-weight: 400; }
+  h2 { font-size: 18px; color: var(--cyan); margin: 0 0 20px; letter-spacing: 1px; }
+  h3 { font-size: 12px; color: var(--gold); margin: 0 0 10px; }
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(7, 11, 36, 0.92); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; gap: 18px; align-items: center; overflow-x: auto; white-space: nowrap; padding-top: 10px; padding-bottom: 10px; }
+  nav img { height: 26px; }
+  nav a { font-size: 14px; color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--text); }
+
+  .hero { padding: 40px 0 48px; text-align: center; }
+  .hero img.logo { width: min(620px, 100%); height: auto; }
+  .tagline { font-family: "Press Start 2P", monospace; font-size: 14px; color: var(--gold); margin: 18px 0 10px; }
+  .lede { max-width: 720px; margin: 0 auto 26px; color: var(--text); font-size: 18px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block; padding: 12px 18px; border-radius: 10px; font-weight: 700; text-decoration: none;
+    border: 2px solid var(--cyan); color: var(--text); background: var(--panel);
+  }
+  .btn.primary { background: linear-gradient(90deg, #1a6dff, #b02bff); border-color: transparent; color: #fff; }
+  .btn:hover { color: #fff; border-color: var(--pink); }
+  .launch { margin-top: 22px; color: var(--muted); font-size: 14px; }
+  .launch b { color: var(--green); }
+
+  .grid2 { display: grid; grid-template-columns: 340px 1fr; gap: 32px; align-items: start; }
+  .facts { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .facts dl { margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 8px 12px; font-size: 14px; }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; overflow-wrap: anywhere; }
+  .prose p { margin: 0 0 14px; }
+  .prose ul { padding-left: 20px; margin: 0 0 14px; }
+  .prose li { margin-bottom: 6px; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .card img, .card video { display: block; width: 100%; height: auto; }
+  .card .body { padding: 14px 16px 18px; }
+  .card .body p { margin: 0; color: var(--muted); font-size: 15px; }
+  .card .dl { display: inline-block; margin-top: 8px; font-size: 13px; }
+
+  .video { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+  .video video { display: block; width: 100%; height: auto; }
+
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .shots a { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .shots img { display: block; width: 100%; height: auto; transition: transform .2s; }
+  .shots a:hover img { transform: scale(1.03); }
+  .gifs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .assets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .assets .thumb { background: repeating-conic-gradient(#1a2250 0% 25%, #141b40 0% 50%) 50% / 20px 20px; display: flex; align-items: center; justify-content: center; min-height: 170px; padding: 14px; }
+  .assets .thumb img { max-height: 150px; width: auto; max-width: 100%; }
+
+  .note { background: var(--panel-2); border-left: 4px solid var(--pink); border-radius: 8px; padding: 14px 18px; color: var(--text); }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .tag { display: inline-block; font-size: 12px; padding: 3px 8px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--line); color: var(--muted); margin: 0 6px 6px 0; }
+  footer { padding: 36px 0 60px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); text-align: center; }
+
+  @media (max-width: 860px) {
+    .grid2, .cols { grid-template-columns: 1fr; }
+    .steps, .shots, .assets { grid-template-columns: 1fr 1fr; }
+    .gifs { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 540px) {
+    .steps, .shots, .assets { grid-template-columns: 1fr; }
+    .facts dl { grid-template-columns: 96px 1fr; }
+    h2 { font-size: 15px; }
+    .lede { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <img src="assets/logos/rankrisk_icon.png" alt="">
+    <a href="#facts">Fact sheet</a>
+    <a href="#how">How it plays</a>
+    <a href="#trailer">Trailer</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#gifs">GIFs</a>
+    <a href="#logos">Logos &amp; art</a>
+    <a href="#creators">For creators</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="assets/logos/rankrisk_logo_transparent.png" alt="Rank Risk">
+    <div class="tagline">GUESS THE ORDER. RISK YOUR RANK.</div>
+    <p class="lede">A trivia ranking puzzle game about knowledge, deduction and risk. Put six cards in the right order, bet your points before you answer, and use the feedback to crack it before your attempts run out.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://store.steampowered.com/app/4818950/Rank_Risk_Guess_the_Order/">Steam page &amp; free demo</a>
+      <a class="btn" href="#trailer">Watch the trailer</a>
+      <a class="btn" href="rankrisk_presskit.zip">Download all assets (.zip)</a>
+    </div>
+    <p class="launch">Out <b>December 1, 2026</b> on Steam for Windows and macOS. $2.99, with 20% off in launch week.</p>
+  </div>
+</header>
+
+<section id="facts">
+  <div class="wrap grid2">
+    <div class="facts">
+      <h3>FACT SHEET</h3>
+      <dl>
+        <dt>Title</dt><dd>Rank Risk: Guess the Order</dd>
+        <dt>Developer</dt><dd>Çetin Çağlar (CetCiz Games), a solo developer from Turkey</dd>
+        <dt>Release</dt><dd>December 1, 2026, 18:45 UTC (10:45 PT / 13:45 ET)</dd>
+        <dt>Platforms</dt><dd>Windows 10/11 (64-bit), macOS (native on Apple Silicon and Intel)</dd>
+        <dt>Price</dt><dd>$2.99 USD; 20% launch discount for the first week</dd>
+        <dt>Genre</dt><dd>Trivia, puzzle, casual</dd>
+        <dt>Players</dt><dd>Single-player</dd>
+        <dt>Language</dt><dd>English</dd>
+        <dt>Content</dt><dd>120 puzzles in 12 categories, 8 power-ups, 8 ranks, 27 Steam achievements, Steam leaderboards, Steam Cloud</dd>
+        <dt>Demo</dt><dd>Free on Steam: 12 puzzles, one from every category</dd>
+        <dt>Store</dt><dd><a href="https://store.steampowered.com/app/4818950/Rank_Risk_Guess_the_Order/">store.steampowered.com/app/4818950</a></dd>
+        <dt>Press</dt><dd><a href="mailto:info@cetincaglar.com.tr">info@cetincaglar.com.tr</a></dd>
+      </dl>
+    </div>
+    <div class="prose">
+      <h2>ABOUT THE GAME</h2>
+      <p>Every round of <b>Rank Risk</b> deals you six answer cards and one goal: put them in the right order. Slowest to fastest animal. Mildest to hottest pepper. Oldest to newest invention. Smallest to largest planet.</p>
+      <p>Before each question you decide how many Rank Points (RP) to risk. Play it safe, aim higher for a bigger payout, or go <b>Max Risk</b> and put everything on one answer.</p>
+      <p>When your order is wrong, the game only tells you <b>how many</b> cards are in the right position, not which ones. Rethink, swap, and try again before your four attempts run out. Win to grow your RP, build streaks for bonus payouts, and climb from Rookie to Legend.</p>
+      <h3>FEATURES</h3>
+      <ul>
+        <li>120 ranking puzzles across 12 categories, each showing the real values and a fun fact when you solve it</li>
+        <li>Risk your RP before every question, including all-in Max Risk moments</li>
+        <li>Position-only feedback that turns every wrong answer into a clue</li>
+        <li>8 power-ups: Hint, Peek, Arrows, Spotlight, +1 Try, Skip, Insurance and Streak Shield</li>
+        <li>Win streaks with bonus payouts, 8 ranks from Rookie to Legend</li>
+        <li>27 Steam achievements and global leaderboards</li>
+        <li>Short, replayable runs that fit a coffee break or a long stream</li>
+      </ul>
+      <p>
+        <span class="tag">Animals</span><span class="tag">Food</span><span class="tag">Inventions</span><span class="tag">Space</span><span class="tag">Dinosaurs</span><span class="tag">Which Came First</span><span class="tag">Human Body</span><span class="tag">Sports</span><span class="tag">Geography</span><span class="tag">Ocean</span><span class="tag">Scale &amp; Speed</span><span class="tag">Sound &amp; Music</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>HOW IT PLAYS</h2>
+    <div class="steps">
+      <div class="card">
+        <img src="assets/gifs/rankrisk_drag_into_order.gif" alt="Dragging six animal cards into order" loading="lazy">
+        <div class="body"><h3>1. RANK THE CARDS</h3><p>Drag six cards into the slots. Here: animals from slowest to fastest.</p></div>
+      </div>
+      <div class="card">
+        <img src="assets/gifs/rankrisk_feedback_nailed_it.gif" alt="Feedback arrows guiding the cards to the right order" loading="lazy">
+        <div class="body"><h3>2. READ THE FEEDBACK</h3><p>Wrong? You learn how many cards are right. Power-ups like Arrows point the way.</p></div>
+      </div>
+      <div class="card">
+        <img src="assets/gifs/rankrisk_peek_powerup.gif" alt="Using Peek to see the Scoville value of a pepper" loading="lazy">
+        <div class="body"><h3>3. RISK AND WIN</h3><p>Bet RP before you answer, use power-ups like Peek, and climb the ranks.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trailer">
+  <div class="wrap">
+    <h2>TRAILER</h2>
+    <div class="video">
+      <video controls preload="metadata" poster="assets/thumbs/capsule.jpg">
+        <source src="assets/rankrisk_trailer_1080p.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p><a href="assets/rankrisk_trailer_1080p.mp4" download>Download the trailer (1080p, 60 fps, MP4, 39 s)</a> · Also on the <a href="https://store.steampowered.com/app/4818950/Rank_Risk_Guess_the_Order/">Steam page</a>.</p>
+  </div>
+</section>
+
+<section id="screenshots">
+  <div class="wrap">
+    <h2>SCREENSHOTS</h2>
+    <p style="color:var(--muted);margin-top:-8px">1920×1080 PNG. Click a screenshot for the full-size file.</p>
+    <div class="shots">
+      <a href="assets/screenshots/rankrisk_01_betting_ocean.png"><img src="assets/thumbs/rankrisk_01_betting_ocean.jpg" alt="Setting the risk before an ocean puzzle" loading="lazy"></a>
+      <a href="assets/screenshots/rankrisk_02_feedback_space.png"><img src="assets/thumbs/rankrisk_02_feedback_space.jpg" alt="Position feedback on a space puzzle" loading="lazy"></a>
+      <a href="assets/screenshots/rankrisk_03_arrows_powerup.png"><img src="assets/thumbs/rankrisk_03_arrows_powerup.jpg" alt="The Arrows power-up" loading="lazy"></a>
+      <a href="assets/screenshots/rankrisk_04_solved_achievement.png"><img src="assets/thumbs/rankrisk_04_solved_achievement.jpg" alt="A solved puzzle with an achievement unlocked" loading="lazy"></a>
+      <a href="assets/screenshots/rankrisk_05_powerups_hint_peek.png"><img src="assets/thumbs/rankrisk_05_powerups_hint_peek.jpg" alt="Hint and Peek power-ups" loading="lazy"></a>
+      <a href="assets/screenshots/rankrisk_06_main_menu.png"><img src="assets/thumbs/rankrisk_06_main_menu.jpg" alt="Main menu" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section id="gifs">
+  <div class="wrap">
+    <h2>GIFS</h2>
+    <div class="gifs">
+      <div class="card"><img src="assets/gifs/rankrisk_drag_into_order.gif" alt="Dragging cards into order" loading="lazy"><div class="body"><p>Drag them into order</p><a class="dl" href="assets/gifs/rankrisk_drag_into_order.gif" download>Download (800 px)</a></div></div>
+      <div class="card"><img src="assets/gifs/rankrisk_feedback_nailed_it.gif" alt="Arrows feedback and a solved puzzle" loading="lazy"><div class="body"><p>Arrows show the way, then "Nailed it!"</p><a class="dl" href="assets/gifs/rankrisk_feedback_nailed_it.gif" download>Download (800 px)</a></div></div>
+      <div class="card"><img src="assets/gifs/rankrisk_categories.gif" alt="Planets, sea animals and organs puzzles" loading="lazy"><div class="body"><p>120 questions, 12 categories</p><a class="dl" href="assets/gifs/rankrisk_categories.gif" download>Download (800 px)</a></div></div>
+      <div class="card"><img src="assets/gifs/rankrisk_peek_powerup.gif" alt="Peek power-up on a pepper heat puzzle" loading="lazy"><div class="body"><p>Peek at the real values (Scoville heat)</p><a class="dl" href="assets/gifs/rankrisk_peek_powerup.gif" download>Download (800 px)</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="logos">
+  <div class="wrap">
+    <h2>LOGOS &amp; ART</h2>
+    <div class="assets">
+      <div class="card"><div class="thumb"><img src="assets/logos/rankrisk_logo_transparent.png" alt="Rank Risk logo"></div><div class="body"><p>Logo, transparent PNG, 950×246</p><a class="dl" href="assets/logos/rankrisk_logo_transparent.png" download>Download</a></div></div>
+      <div class="card"><div class="thumb"><img src="assets/logos/rankrisk_icon.png" alt="Rank Risk icon"></div><div class="body"><p>Icon, transparent PNG, 512×512</p><a class="dl" href="assets/logos/rankrisk_icon.png" download>Download</a></div></div>
+      <div class="card"><div class="thumb"><img src="assets/logos/cetciz_games_logo.png" alt="CetCiz Games logo"></div><div class="body"><p>CetCiz Games studio logo, PNG, 1254×1254</p><a class="dl" href="assets/logos/cetciz_games_logo.png" download>Download</a></div></div>
+      <div class="card"><div class="thumb"><img src="assets/art/rankrisk_capsule_1232x706.png" alt="Key art"></div><div class="body"><p>Key art (main capsule), PNG, 1232×706</p><a class="dl" href="assets/art/rankrisk_capsule_1232x706.png" download>Download</a></div></div>
+      <div class="card"><div class="thumb"><img src="assets/art/rankrisk_header_920x430.png" alt="Header art"></div><div class="body"><p>Header, PNG, 920×430</p><a class="dl" href="assets/art/rankrisk_header_920x430.png" download>Download</a></div></div>
+      <div class="card"><div class="thumb"><img src="assets/art/rankrisk_vertical_748x896.png" alt="Vertical art"></div><div class="body"><p>Vertical capsule, PNG, 748×896</p><a class="dl" href="assets/art/rankrisk_vertical_748x896.png" download>Download</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="creators">
+  <div class="wrap cols">
+    <div class="prose">
+      <h2>FOR CREATORS &amp; STREAMERS</h2>
+      <ul>
+        <li><b>Videos and streams are welcome, and you may monetize them.</b> No permission needed, before or after launch.</li>
+        <li><b>No embargo.</b> Publish whenever you like.</li>
+        <li><b>Music is CC0</b>, so there are no copyright claims to worry about.</li>
+        <li><b>Great with chat:</b> show the six cards and let chat argue about the order before you submit.</li>
+        <li>Puzzles are quick, so the game fits a short video as well as a long stream.</li>
+        <li><b>Want a Steam key?</b> Email <a href="mailto:info@cetincaglar.com.tr">info@cetincaglar.com.tr</a> from the address listed on your channel and include your channel link. The free demo is on the Steam page if you want to try it first.</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <h2>TRANSPARENCY</h2>
+      <div class="note">
+        <p>Some visual assets, including the card illustrations, and the trivia data were created with the help of generative AI tools. All AI-assisted content was reviewed, edited and curated by the developer before it went into the game. This is also stated in the AI disclosure on the Steam page.</p>
+        <p style="margin:0">Music is CC0. Sound effects come from a licensed sound library.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap cols">
+    <div class="prose">
+      <h2>ABOUT THE DEVELOPER</h2>
+      <p>Rank Risk is made by <b>Çetin Çağlar</b>, a solo developer from Turkey, under the name CetCiz Games. Design, code and puzzle curation are all done by one person.</p>
+    </div>
+    <div class="prose">
+      <h2>CONTACT</h2>
+      <p>Press, keys and interviews: <a href="mailto:info@cetincaglar.com.tr">info@cetincaglar.com.tr</a></p>
+      <p>Steam: <a href="https://store.steampowered.com/app/4818950/Rank_Risk_Guess_the_Order/">Rank Risk: Guess the Order</a></p>
+      <p><a class="btn" href="rankrisk_presskit.zip">Download all assets (.zip)</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Rank Risk: Guess the Order © 2026 Çetin Çağlar / CetCiz Games. All assets on this page may be used for coverage of the game.</div>
+</footer>
+
+</body>
+</html>

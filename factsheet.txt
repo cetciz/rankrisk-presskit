@@ -1,0 +1,43 @@
+RANK RISK: GUESS THE ORDER - FACT SHEET
+
+Developer:   Çetin Çağlar (CetCiz Games), solo developer from Turkey
+Release:     December 1, 2026, 18:45 UTC (10:45 PT / 13:45 ET)
+Platforms:   Windows 10/11 (64-bit), macOS (native on Apple Silicon and Intel)
+Price:       $2.99 USD, 20% launch discount for the first week
+Genre:       Trivia, puzzle, casual
+Players:     Single-player
+Language:    English
+Content:     120 puzzles in 12 categories, 8 power-ups, 8 ranks, 27 Steam achievements,
+             Steam leaderboards, Steam Cloud
+Demo:        Free on Steam (12 puzzles, one from every category)
+Steam:       https://store.steampowered.com/app/4818950/Rank_Risk_Guess_the_Order/
+Press:       info@cetincaglar.com.tr
+
+SHORT DESCRIPTION
+Rank six answer cards in the correct order, choose how much RP to risk, and use limited
+attempts to solve each puzzle. Build streaks, chase bigger payouts, and climb the
+leaderboards in this fast-paced trivia ranking game.
+
+ABOUT
+Every round deals you six answer cards and one goal: put them in the right order. Slowest
+to fastest animal. Mildest to hottest pepper. Oldest to newest invention. Smallest to
+largest planet. Before each question you decide how many Rank Points (RP) to risk, up to
+an all-in Max Risk. When your order is wrong, the game only tells you how many cards are
+in the right position, not which ones. Rethink and try again before your four attempts run
+out. Win to grow your RP, build streaks for bonus payouts, and climb from Rookie to Legend.
+
+CATEGORIES
+Animals, Food, Inventions, Space, Dinosaurs, Which Came First, Human Body, Sports,
+Geography, Ocean, Scale & Speed, Sound & Music
+
+POWER-UPS
+Hint, Peek, Arrows, Spotlight, +1 Try, Skip, Insurance, Streak Shield
+
+FOR CREATORS
+Videos and streams are welcome and may be monetized. No embargo. Music is CC0.
+
+TRANSPARENCY
+Some visual assets, including the card illustrations, and the trivia data were created
+with the help of generative AI tools. All AI-assisted content was reviewed, edited and
+curated by the developer. This is stated in the AI disclosure on the Steam page.
+Music is CC0. Sound effects come from a licensed sound library.
